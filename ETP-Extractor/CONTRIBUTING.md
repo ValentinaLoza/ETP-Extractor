@@ -1,25 +1,7 @@
-# Contribuir
+Copyright (c) 2026
 
-## Flujo recomendado
+All rights reserved.
 
-1. Crear una rama por funcionalidad.
-2. Mantener los commits pequeños.
-3. No subir manuales, paquetes ETP, bases RocksDB ni archivos `app.asar`.
-4. Agregar pruebas cuando se incorpore lógica de parsing o extracción.
-5. Documentar cada endpoint o estructura descubierta en `docs/research/`.
+This repository contains original tooling only. It does not include Pratt & Whitney Canada manuals, proprietary publication content, credentials, encryption keys, or extracted copyrighted material.
 
-## Convención de ramas
-
-- `feature/angular-analyzer`
-- `feature/api-client`
-- `feature/ipc-parser`
-- `feature/consumables-db`
-- `fix/...`
-
-## Convención de commits
-
-- `feat:`
-- `fix:`
-- `docs:`
-- `test:`
-- `refactor:`
+Use is limited to content and systems for which the user has legitimate authorization.

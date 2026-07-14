@@ -1,7 +1,48 @@
-httpx>=0.27.0
-beautifulsoup4>=4.12.3
-lxml>=5.2.2
-pydantic>=2.8.2
-openpyxl>=3.1.5
-typer>=0.12.3
-rich>=13.7.1
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Local data and manuals
+data/input/*
+!data/input/.gitkeep
+data/output/*
+!data/output/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Extracted proprietary content
+*.asar
+*.pak
+*.bin
+*.ldb
+*.sst
+*.log.old
+
+# Secrets and local config
+.env
+config/local.json
+config/secrets.json
+
+# Windows
+Thumbs.db
+Desktop.ini
