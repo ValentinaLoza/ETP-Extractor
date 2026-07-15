@@ -1,1 +1,100 @@
-# ETP-Extractor
+# ETP Extractor
+
+Proyecto para analizar paquetes offline de Pratt & Whitney Canada ETP Premium y construir una base técnica de publicaciones, capítulos, figuras y consumibles.
+
+## Objetivo inicial
+
+El primer objetivo es extraer de forma local y trazable la información del IPC y MM del PT6A-140 para construir una base de datos de:
+
+- O-rings y packings
+- Juntas y sellos
+- Filtros
+- Arandelas y hardware de un solo uso
+- Lubricantes y compuestos
+- Herramientas especiales
+- Inspecciones y task cards
+
+## Alcance de la primera versión
+
+1. Analizar los bundles Angular del cliente ETP.
+2. Identificar rutas, parámetros e interceptores HTTP.
+3. Leer el índice de publicaciones instaladas.
+4. Extraer el TOC de un manual.
+5. Descargar contenido autorizado desde la instalación local.
+6. Parsear IPC y MM.
+7. Exportar resultados a CSV, Excel y SQLite.
+
+## Estructura
+
+```text
+ETP-Extractor/
+├── src/
+│   └── etp_extractor/
+│       ├── angular_analyzer/
+│       ├── api_client/
+│       ├── package_reader/
+│       ├── content_parser/
+│       ├── consumables/
+│       ├── exporters/
+│       ├── database/
+│       └── common/
+├── tests/
+├── docs/
+├── data/
+├── scripts/
+├── config/
+└── logs/
+```
+
+## Requisitos previstos
+
+- Python 3.11+
+- Windows 10/11 para pruebas con ETP local
+- Acceso autorizado a una instalación local de ETP Premium
+- Paquetes offline descargados legítimamente
+
+## Inicio rápido
+
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python -m etp_extractor.cli --help
+```
+
+## Estado
+
+Versión inicial de arquitectura. Los módulos están preparados para ser completados de forma incremental.
+
+
+## Avance v0.2
+
+El Angular Analyzer confirmó que ETP agrega el token de sesión como query parameter:
+
+```text
+?token=<sesión>
+```
+
+El token se intercambia mediante IPC entre Angular y Electron usando `get-token`, `set-token` y `token-callback`, y se conserva en memoria del proceso principal.
+
+Ver:
+
+- `docs/research/SPRINT_1_ANGULAR_ANALYZER.md`
+- `docs/research/angular_analysis_real.json`
+
+
+## Avance v0.3 — Session Bridge
+
+Se incorporó un puente de sesión PowerShell que ejecuta las consultas desde la ventana oficial de ETP mediante Chrome DevTools Protocol. El token no se imprime ni se guarda.
+
+Primera prueba:
+
+```text
+scripts/Ejecutar_Session_Bridge_Library.bat
+```
+
+Luego:
+
+```text
+scripts/Ejecutar_Session_Bridge_PT6A140_TOC.bat
+```
