@@ -1,0 +1,131 @@
+{
+  "routes": {
+    "/api/attachments": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 246084,
+        "snippet": "}sortLocations(t){return t.locations.sort((t,e)=>t.sns.match(/^\\d/)&&!e.sns.match(/^\\d/)?1:!t.sns.match(/^\\d/)&&e.sns.match(/^\\d/)?-1:t.sns.localeCompare(e.sns,\"en-US\",{sensitivity:\"base\"})),t}}return t.ROUTE_ATTACHMENT=\"/api/attachments\",t.\\u0275fac=function(e){return new(e||t)(i.Yb(s.b))},t.\\u0275prov=i.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},eIep:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return s});var r=n("
+      }
+    ],
+    "/api/auth": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 243362,
+        "snippet": "Promise()})}getTokenInfo(e){return Object(r.a)(this,void 0,void 0,function*(){return this.http.get(t.AUTH_ENDPOINT+\"/permissions\",{params:e?{token:e}:{}}).toPromise().catch(t=>console.error(t))})}}return t.AUTH_ENDPOINT=\"/api/auth\",t.\\u0275fac=function(e){return new(e||t)(o.Yb(i.b))},t.\\u0275prov=o.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},dpzC:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return a});var r=n(\"mrSG\")"
+      }
+    ],
+    "/api/bookmarks": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 121041,
+        "snippet": "rn Object(r.a)(this,void 0,void 0,function*(){const r=Object.assign(e.toQueryObject());return yield this.http.get(`${t.ROUTE_BOOKMARK}/${n}`,{params:r}).toPromise().catch(t=>Promise.reject(t))})}}return t.ROUTE_BOOKMARK=\"/api/bookmarks\",t.\\u0275fac=function(e){return new(e||t)(i.Yb(s.b))},t.\\u0275prov=i.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})();class c{constructor(){this.bookmarks=[],this.isBookmarked=!1}}var l=n(\"hRYC\")"
+      }
+    ],
+    "/api/config/": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 160713,
+        "snippet": "ction*(){let e=new o;try{e=yield this.http.get(t.ROUTE_CONFIG).toPromise().catch(this.handleError)}catch(n){}return e})}handleError(t){return console.error(\"An error occurred\",t),Promise.reject(t)}}return t.ROUTE_CONFIG=\"/api/config/\",t.\\u0275fac=function(e){return new(e||t)(i.Yb(s.b))},t.\\u0275prov=i.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},NJ4a:function(t,e,n){\"use strict\";function r(t){setTimeout(()=>{throw t},0)}n."
+      }
+    ],
+    "/api/content/": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 119998,
+        "snippet": "t();return this.http.get(`${t.ROUTE_CONTENT}digital/${n}`,{params:r}).toPromise().catch(Promise.reject)}getPDFLink(e,n){return`${t.ROUTE_CONTENT}pdf/${encodeURIComponent(n)}?${e.toQueryString()}`}}return t.ROUTE_CONTENT=\"/api/content/\",t.\\u0275fac=function(e){return new(e||t)(r.Yb(o.b))},t.\\u0275prov=r.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},ArwV:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return u});var r=n(\"mr"
+      },
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 499283,
+        "snippet": ".metadata.pwcbannerinfo[\"pb-name\"]}},figures:o.figures,content:o.content}})}handleError(t){return console.error(\"An error occurred\",t),this.navigation.navigateByUrl(\"/notfound\"),Promise.reject(t)}}return t.ROUTE_CONTENT=\"/api/content/\",t.\\u0275fac=function(e){return new(e||t)(i.Yb(s.b),i.Yb(o.a))},t.\\u0275prov=i.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},sOQU:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return i});v"
+      },
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 605377,
+        "snippet": "ject();return this.http.get(`${t.ROUTE_CONTENT}digital/${n}/figures`,{params:r}).toPromise().catch(this.handleError)})}handleError(t){return console.error(\"An error occurred\",t),Promise.reject(t)}}return t.ROUTE_CONTENT=\"/api/content/\",t.\\u0275fac=function(e){return new(e||t)(o.Yb(i.b))},t.\\u0275prov=o.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},yCtX:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return s});var r=n(\"HD"
+      }
+    ],
+    "/api/library": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 241691,
+        "snippet": "his.navigation.navigate(\"/not-found\"),i}return r})}handleError(t){return console.error(\"An error occurred\",t),this.navigation.navigate(\"/not-found\"),Promise.reject(t)}}return t.ROUTE_MANUAL=\"/api/manual\",t.ROUTE_LIBRARY=\"/api/library\",t.\\u0275fac=function(e){return new(e||t)(c.Yb(l.b),c.Yb(s.a),c.Yb(a.a))},t.\\u0275prov=c.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},c2HN:function(t,e,n){\"use strict\";function r(t){return!!t&"
+      },
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 495481,
+        "snippet": "leError)}handleError(t){return console.error(\"An error occurred\",t),Promise.reject(t)}buildManualInfoFromManifest(t){return new o.c(t.data.partno,t.data.revision.no,t.data.languages,t.data.media)}}return t.ROUTE_LIBRARY=\"/api/library\",t.\\u0275fac=function(e){return new(e||t)(s.Yb(a.b))},t.\\u0275prov=s.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},quSY:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return a});var r=n(\"DH7"
+      }
+    ],
+    "/api/manual": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 241661,
+        "snippet": "s=e.myppLinks}catch(i){throw this.navigation.navigate(\"/not-found\"),i}return r})}handleError(t){return console.error(\"An error occurred\",t),this.navigation.navigate(\"/not-found\"),Promise.reject(t)}}return t.ROUTE_MANUAL=\"/api/manual\",t.ROUTE_LIBRARY=\"/api/library\",t.\\u0275fac=function(e){return new(e||t)(c.Yb(l.b),c.Yb(s.a),c.Yb(a.a))},t.\\u0275prov=c.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})()},c2HN:function(t,e,n){\"use st"
+      }
+    ],
+    "/api/manual/toc": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 2241,
+        "snippet": "age)?this.parsePublicationPages(t.Page):this.parsePublicationPage(t.Page)),e}handleError(t){return console.error(\"An error occurred\",t),this.navigation.navigate(\"/not-found\"),Promise.reject(t)}}return t.ROUTE_MANUAL_TOC=\"/api/manual/toc\",t.\\u0275fac=function(e){return new(e||t)(c.Yb(l.b),c.Yb(s.a))},t.\\u0275prov=c.Ib({token:t,factory:t.\\u0275fac,providedIn:\"root\"}),t})(),h=(()=>{class t extends o.a{constructor(t){super(new i),this.endpo"
+      }
+    ],
+    "/api/search/": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 136452,
+        "snippet": "ow new Error(\"no Promise impl found\");return t}},HErG:function(t,e,n){\"use strict\";n.d(e,\"a\",function(){return s});var r=n(\"mrSG\"),o=n(\"fXoL\"),i=n(\"tk/3\");let s=(()=>{class t{constructor(t){this.http=t,this.ROUTE_SEARCH=\"/api/search/\"}getSearchResultAsync(t,e,n,o){return Object(r.a)(this,void 0,void 0,function*(){const r=Object.assign(t.toQueryObject());let i;try{i=yield this.http.post(this.ROUTE_SEARCH,{query:e,lang:n,exact:o},{params:"
+      }
+    ],
+    "/api/shopping/": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 128538,
+        "snippet": "tion(t,e,n){\"use strict\";n.d(e,\"a\",function(){return c});var r=n(\"mrSG\"),o=n(\"zMxa\"),i=n(\"hRYC\"),s=n(\"fXoL\"),a=n(\"tk/3\");let c=(()=>{class t{constructor(t,e,n){this.ipc=t,this.authStore=e,this.http=n,this.ROUTE_SHOPPING=\"/api/shopping/\"}addPartToCurrentShoppingList(t){return Object(r.a)(this,void 0,void 0,function*(){try{const e=this.authStore.state.username;yield this.http.put(`${this.ROUTE_SHOPPING}${e}/current`,t,{responseType:\"text\""
+      },
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 391402,
+        "snippet": "r r=n(\"jhN1\"),o=n(\"3Pt+\"),i=n(\"tk/3\"),s=n(\"1kSV\"),a=n(\"fXoL\"),c=n(\"w4bO\"),l=n(\"mrSG\");class u{constructor(){this.isSaved=!0}}var h=n(\"CY3g\"),d=n(\"kRws\");let p=(()=>{class t{constructor(t){this.http=t,this.ROUTE_SHOPPING=\"/api/shopping/\"}getCurrentShoppingList(t){return Object(l.a)(this,void 0,void 0,function*(){let e=null;try{e=yield this.http.get(`${this.ROUTE_SHOPPING}${t}/current`).toPromise().catch(this.handleError)}catch(n){console"
+      }
+    ]
+  },
+  "token_flow": {
+    "interceptor_found": true,
+    "query_parameter": "token",
+    "electron_channels": {
+      "get-token": "/mnt/data/app_asar_extract/dist/etp-client/src/utils/ipcChannels.js",
+      "set-token": "/mnt/data/app_asar_extract/dist/etp-client/src/utils/ipcChannels.js",
+      "token-callback": "/mnt/data/app_asar_extract/dist/etp-client/src/utils/ipcChannels.js"
+    },
+    "storage": "Electron main-process memory (Helpers singleton)",
+    "evidence": [
+      {
+        "file": "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+        "offset": 613574,
+        "snippet": "cument.addEventListener(\"dragover\",this.prevDefault),document.addEventListener(\"drop\",this.prevDefault)}ngOnDestroy(){document.removeEventListener(\"dragover\",this.prevDefault),document.removeEventListener(\"drop\",this.prevDefault),document.removeEventListener(\"drag\",this.prevDefault),document.removeEventListener(\"dragstart\",this.prevDefault)}}return t.\\u0275fac=function(e){return new(e||t)},t.\\u0275cmp=o.Gb({type:t,selectors:[[\"app-root\"]],decls:1,vars:0,template:function(t,e){1&t&&o.Nb(0,\"router-outlet\")},directives:[i.f],encapsulation:2}),t})();var y=n(\"tk/3\"),C=n(\"hRYC\");let O=(()=>{class t{constructor(t){this.auth=t}intercept(t,e){const n=this.auth.state.token&&!t.params.get(\"token\")?t.clone({params:t.params.append(\"token\",this.auth.state.token)}):t;return e.handle(n)}}return t.\\u0275fac=function(e){return new(e||t)(o.Yb(C.a))},t.\\u0275prov=o.Ib({token:t,factory:t.\\u0275fac}),t})();var w=n(\"D0XW\");const M=(()=>{function t(){return Error.call(this),this.message=\"Timeout has occurred\",this.name=\"TimeoutError\",this}return t.prototype=Object.create(Error.prototype),t})();var P=n(\"mlxB\"),S=n(\"zx2A\");class x{constructor(t,e,n,r){this.waitFor=t,this.absoluteTimeout=e,this.withObservable=n,this.scheduler=r}call(t,e){return e.subscribe(new k(t,this.absoluteTimeout,this.waitFor,this.wit"
+      },
+      {
+        "file": "/mnt/data/app_asar_extract/dist/etp-client/src/utils/ipcChannels.js",
+        "offset": 320,
+        "snippet": "\"use strict\";\nvar _a, _b;\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.IpcChannels = void 0;\nclass IpcChannels {\n}\nexports.IpcChannels = IpcChannels;\nIpcChannels.toElectron = (_a = class {\n    },\n    _a.NAME_OF_THE_USER = 'name-of-the-user',\n    _a.SET_TOKEN = 'set-token',\n    _a.GET_TOKEN = 'get-token',\n    _a.SHOPPING_LIST_CHANGED = 'update-shopping-list',\n    _a.GET_ETP_INFO = 'get-electron-info',\n    _a.ATTACHMENTS_CHANGED = 'attachment-changed',\n    _a.OPEN_LINK = 'open-link',\n    _a.WINDOW_JS_CLOSE = 'window-js-close',\n    _a.DOWNLOAD = 'download',\n    _a.GET_CONFIG = 'get-config',\n    _a.SET_CONFIG = 'set-config',\n    _a);\nIpcChannels.fromElectron = (_b = class {\n    },\n    _b.SET_TOKEN = 'token-callback',\n    _b.NAME_OF_THE_US"
+      },
+      {
+        "file": "/mnt/data/app_asar_extract/dist/etp-client/src/utils/ipcChannels.js",
+        "offset": 288,
+        "snippet": "\"use strict\";\nvar _a, _b;\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.IpcChannels = void 0;\nclass IpcChannels {\n}\nexports.IpcChannels = IpcChannels;\nIpcChannels.toElectron = (_a = class {\n    },\n    _a.NAME_OF_THE_USER = 'name-of-the-user',\n    _a.SET_TOKEN = 'set-token',\n    _a.GET_TOKEN = 'get-token',\n    _a.SHOPPING_LIST_CHANGED = 'update-shopping-list',\n    _a.GET_ETP_INFO = 'get-electron-info',\n    _a.ATTACHMENTS_CHANGED = 'attachment-changed',\n    _a.OPEN_LINK = 'open-link',\n    _a.WINDOW_JS_CLOSE = 'window-js-close',\n    _a.DOWNLOAD = 'download',\n    _a.GET_CONFIG = 'get-config',\n    _a.SET_CONFIG = 'set-config',\n    _a);\nIpcChannels.fromElectron = (_b = class {\n    },\n    _b.SET_TOKEN = 'token-"
+      },
+      {
+        "file": "/mnt/data/app_asar_extract/dist/etp-client/src/utils/ipcChannels.js",
+        "offset": 732,
+        "snippet": "EN = 'set-token',\n    _a.GET_TOKEN = 'get-token',\n    _a.SHOPPING_LIST_CHANGED = 'update-shopping-list',\n    _a.GET_ETP_INFO = 'get-electron-info',\n    _a.ATTACHMENTS_CHANGED = 'attachment-changed',\n    _a.OPEN_LINK = 'open-link',\n    _a.WINDOW_JS_CLOSE = 'window-js-close',\n    _a.DOWNLOAD = 'download',\n    _a.GET_CONFIG = 'get-config',\n    _a.SET_CONFIG = 'set-config',\n    _a);\nIpcChannels.fromElectron = (_b = class {\n    },\n    _b.SET_TOKEN = 'token-callback',\n    _b.NAME_OF_THE_USER = 'name-of-the-user-callback',\n    _b.SHOPPING_LIST_CHANGED = 'update-shopping-list-callback',\n    _b.GET_ETP_INFO = 'electron-info-callback',\n    _b.ATTACHMENTS_CHANGED = 'attachment-changed-callback',\n    _b.SPAWN_WINDOW = 'spawn-new-window',\n    _b.DOWNLOAD = 'download-callback',\n    _b.GET_CONFIG = 'get-config',\n    _b);\n"
+      }
+    ]
+  },
+  "files_scanned": [
+    "/mnt/data/work_etp/analysis/ETP_Analisis/main-es2015.js",
+    "/mnt/data/work_etp/analysis/ETP_Analisis/runtime-es2015.js",
+    "/mnt/data/work_etp/analysis/ETP_Analisis/scripts.js"
+  ]
+}
